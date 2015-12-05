@@ -1,5 +1,5 @@
 #Overview
-This project is a simple Docker image that runs the [DbVisualer](http://www.dbvis.com/) SQL IDE.
+This project is a simple Docker image that runs the [logFaces client](http://www.moonlit-software.com/).
 
 #Prerequisites
 * a working [Docker](http://docker.io) engine

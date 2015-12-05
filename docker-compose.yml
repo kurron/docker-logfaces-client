@@ -1,9 +1,9 @@
 idea:
     build: .
     labels:
-        org.kurron.description: "DbVisualizer"
-        org.kurron.version: "9.2.13"
-    container_name: "dbvisualizer"
+        org.kurron.description: "logFaces client"
+        org.kurron.version: "4.2.1"
+    container_name: "logfaces"
     net: "host"
     volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix

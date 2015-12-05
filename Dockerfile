@@ -2,9 +2,9 @@ FROM kurron/docker-jetbrains-base:latest
 
 MAINTAINER Ron Kurr <kurr@kurron.org>
 
-LABEL org.kurron.ide.name="DbVisualizer" org.kurron.ide.version=9.2.13
+LABEL org.kurron.ide.name="logFaces client" org.kurron.ide.version=4.2.1
 
-ADD https://www.dbvis.com/product_download/dbvis-9.2.13/media/dbvis_unix_9_2_13.tar.gz /tmp/ide.tar.gz
+ADD http://www.moonlit-software.com/logfaces/downloads/lfc.4.2.1.linux.gtk.x86_64.tar.gz /tmp/ide.tar.gz
 
 RUN mkdir -p /opt/ide && \
     tar zxvf /tmp/ide.tar.gz --strip-components=1 -C /opt/ide && \
@@ -12,4 +12,4 @@ RUN mkdir -p /opt/ide && \
 
 USER developer:developer
 WORKDIR /home/developer
-ENTRYPOINT ["/opt/ide/dbvis"]
+ENTRYPOINT ["/opt/ide/logfaces"]
