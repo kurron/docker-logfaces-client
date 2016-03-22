@@ -1,8 +1,5 @@
-idea:
+logfaces:
     build: .
-    labels:
-        org.kurron.description: "logFaces client"
-        org.kurron.version: "4.2.1"
     container_name: "logfaces"
     net: "host"
     volumes:
