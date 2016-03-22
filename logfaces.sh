@@ -8,7 +8,7 @@ CMD="docker run \
        --user 1000:1000 \
        --volume /tmp/.X11-unix:/tmp/.X11-unix \
        --volume $HOME:/home/developer \
-       kurron/docker-logfaces-client:latest"
+       kurron/docker-logfaces-client:4.2.1"
 
 echo $CMD
 $CMD
