@@ -2,9 +2,9 @@ FROM kurron/docker-jetbrains-base:latest
 
 MAINTAINER Ron Kurr <kurr@kurron.org>
 
-LABEL org.kurron.ide.name="logFaces client" org.kurron.ide.version=4.2.3
+LABEL org.kurron.ide.name="logFaces client" org.kurron.ide.version=4.2.4
 
-ADD http://www.moonlit-software.com/logfaces/downloads/lfc.4.2.3.linux.gtk.x86_64.tar.gz /tmp/ide.tar.gz
+ADD http://www.moonlit-software.com/logfaces/downloads/lfc.4.2.4.linux.gtk.x86_64.tar.gz /tmp/ide.tar.gz
 
 RUN mkdir -p /opt/ide && \
     tar zxvf /tmp/ide.tar.gz --strip-components=1 -C /opt/ide && \
